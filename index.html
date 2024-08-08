@@ -17,7 +17,7 @@
 
     // when we get a message from the app, display it on the page
     ThunkableWebviewerExtension.receiveMessage(function(message) {
-      console.log(document.getElementById('messageDisplay').innerHTML);
+      alert(document.getElementById('messageDisplay').innerHTML);
       alert(message);
       document.getElementById('messageDisplay').innerHTML = message;
     });
